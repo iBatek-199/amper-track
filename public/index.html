@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080b10" />
+  <title>AMPERTRACK — Minecraft Server Tracker</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">A</span><div><strong>AMPERTRACK</strong><span>minecraft server monitor</span></div></div>
+    <div class="live"><i></i><span id="updateText">Ładowanie danych…</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">LIVE SERVER INTELLIGENCE</span>
+        <h1>Polskie serwery Minecraft<br><span>w jednym miejscu.</span></h1>
+        <p>Status, liczba graczy, ranking na żywo, rekord wszech czasów, uptime i historia online. Dane odświeżają się automatycznie.</p>
+      </div>
+      <div class="hero-grid" id="summaryCards">
+        <article><span>GRACZY ONLINE</span><strong id="totalPlayers">—</strong></article>
+        <article><span>SERWERY ONLINE</span><strong id="onlineServers">—</strong></article>
+        <article><span>NAJWIĘKSZY TERAZ</span><strong id="leader">—</strong></article>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="search-wrap"><span>⌕</span><input id="search" autocomplete="off" placeholder="Szukaj serwera…" /></div>
+      <div class="sorts">
+        <button data-sort="players" class="active">Najwięcej graczy</button>
+        <button data-sort="name">Nazwa</button>
+        <button data-sort="uptime">Uptime 24h</button>
+      </div>
+    </section>
+
+    <section id="serverGrid" class="server-grid"></section>
+  </main>
+
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-card">
+      <button id="closeModal" class="close" aria-label="Zamknij">×</button>
+      <div class="modal-head">
+        <div class="server-ident"><div id="modalIcon" class="server-icon big">?</div><div><span id="modalStatus" class="status-pill">—</span><h2 id="modalName">—</h2><p id="modalHost">—</p></div></div>
+        <div class="modal-live"><div class="modal-rank"><span>MIEJSCE</span><strong id="modalRank">—</strong></div><strong id="modalPlayers">—</strong><span>graczy teraz</span></div>
+      </div>
+      <div class="detail-stats">
+        <div><span>Rekord wszech czasów</span><strong id="detailRecord">—</strong></div>
+        <div><span>Peak okresu</span><strong id="detailPeak">—</strong></div>
+        <div><span>Średnia</span><strong id="detailAvg">—</strong></div>
+        <div><span>Uptime</span><strong id="detailUptime">—</strong></div>
+        <div><span>Ping</span><strong id="detailPing">—</strong></div>
+      </div>
+      <div class="chart-toolbar"><span>Historia graczy</span><div id="ranges"><button data-range="1h">1H</button><button data-range="6h">6H</button><button data-range="24h" class="active">24H</button><button data-range="7d">7D</button><button data-range="30d">30D</button></div></div>
+      <div class="chart-wrap"><canvas id="chart"></canvas><div id="chartEmpty" class="chart-empty hidden">Za mało danych — tracker dopiero zbiera historię.</div></div>
+      <div class="motd" id="modalMotd"></div>
+    </div>
+  </div>
+
+  <footer>AMPERTRACK · niezależny tracker statusów Minecraft</footer>
+  <script src="/app.js"></script>
+</body>
+</html>

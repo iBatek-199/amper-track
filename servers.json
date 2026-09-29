@@ -1,0 +1,20 @@
+[
+  { "id": "anarchia-gg", "name": "ANARCHIA.GG", "host": "anarchia.gg" },
+  { "id": "rapy-gg", "name": "RAPY.GG", "host": "rapy.gg" },
+  { "id": "clearmc-pl", "name": "CLEARMC.PL", "host": "clearmc.pl" },
+  { "id": "craftcube-pl", "name": "CRAFTCUBE.PL", "host": "craftcube.pl" },
+  { "id": "kokscraft-pl", "name": "KOKSCRAFT.PL", "host": "kokscraft.pl" },
+  { "id": "ampermc-pl", "name": "AMPERMC.PL", "host": "ampermc.pl" },
+  { "id": "toastmc-pl", "name": "TOASTMC.PL", "host": "toastmc.pl" },
+  { "id": "oghub-pl", "name": "OGHUB.PL", "host": "oghub.pl" },
+  { "id": "blockly-gg", "name": "BLOCKLY.GG", "host": "blockly.gg" },
+  { "id": "wificraft-pl", "name": "WIFICRAFT.PL", "host": "wificraft.pl" },
+  { "id": "22mc-pl", "name": "22MC.PL", "host": "22mc.pl" },
+  { "id": "heartmc-pl", "name": "HEARTMC.PL", "host": "heartmc.pl" },
+  { "id": "setmc-pl", "name": "SETMC.PL", "host": "setmc.pl" },
+  { "id": "minestar-gg", "name": "MINESTAR.GG", "host": "minestar.gg" },
+  { "id": "szefy-pl", "name": "SZEFY.PL", "host": "szefy.pl" },
+  { "id": "tronmc-pl", "name": "TRONMC.PL", "host": "tronmc.pl" },
+  { "id": "diax-gg", "name": "DIAX.GG", "host": "diax.gg" },
+  { "id": "uzi-gg", "name": "UZI.GG", "host": "uzi.gg" }
+]
